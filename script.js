@@ -16,14 +16,14 @@ var operator = [" ", " "];
 function setvalues(btnvalue){
   //console.log(Number(btnvalue))
   btntext =  btn1.innerText;
-  if(btnvalue == "AC"){
+  if(btnvalue == "AC"|| btnvalue =="="){
     opr1 = [0,0];
     opr2 =  [0,0];
     res =  [0,0];
     operator = [" ", " "];
     console.log(opr1[0],opr1[1],opr2[0],opr2[1],operator[0],operator[1])
     btn1.innerText = 0;
-    btn2.innerText = 0;
+    
   }
   else if(btnvalue == "+/-"){
 
@@ -34,11 +34,7 @@ function setvalues(btnvalue){
   else if(btnvalue == "="){
     btn2.style.fontSize="30px";
     btn2.style.fontWeight="600";
-    opr1 = 0;
-    opr2 = 0;
-    res = 0;
     btn1.innerText = " ";
-    operator = " ";
 }
   else if(btnvalue == "%" || btnvalue == "/" || btnvalue == "+" || btnvalue == "-" || btnvalue == "*" ){
     if(c==0){
