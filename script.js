@@ -83,7 +83,7 @@ function setvalues(btnvalue){
             btn1.innerText =  opr1[1];
         }
         else{
-            opr1[1] = (opr1[1]+btnvalue);
+            opr1[1] = Number(opr1[1]+btnvalue);
             btn1.innerText =  btntext + btnvalue;
         }
         
@@ -111,8 +111,10 @@ function setvalues(btnvalue){
         }
       else{
         res[1] = eval(opr1[1] +" "+ operator[1] + " " + opr2[1]);
+        console.log("entered",Number(opr1[1]) ," ", operator[1] ," " , opr2[1]);
       }
       result = 1; 
+      console.log(res[1])
       btn2.innerText =  res[1];
     }
     // if(operator != " "){
