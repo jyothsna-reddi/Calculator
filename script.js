@@ -27,7 +27,10 @@ function setvalues(btnvalue){
     prevtext ="";
     operator = [" ", " "];
     console.log(opr1[0],opr1[1],opr2[0],opr2[1],operator[0],operator[1])
-    btn1.innerText = 0;
+    btn1.innerText = Number(0);
+    if(btnvalue == "AC"){
+        btn2.innerText = Number(0);  
+    }
     
   }
   else if(btnvalue == "+/-"){
